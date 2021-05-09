@@ -3,7 +3,6 @@ import cv2
 import random
 import numpy as np
 import tensorflow as tf
-from core.config import cfg
 
 
 def load_weights_tiny(model, weights_file):
@@ -145,7 +144,7 @@ def get_anchors(anchors_path, tiny=False):
 
 
 
-def draw_bbox(image, bboxes, classes=read_class_names(cfg.YOLO.CLASSES), show_label=True):
+def draw_bbox(image, bboxes, classes=read_class_names('data/coco.names'), show_label=True):
     """
     bboxes: [x_min, y_min, x_max, y_max, probability, cls_id] format coordinates.
     """

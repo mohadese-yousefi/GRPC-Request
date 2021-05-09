@@ -1,13 +1,9 @@
-import os
-
 import cv2
 import numpy as np
 import tensorflow as tf
 from grpc.beta import implementations
 from tensorflow.core.framework import types_pb2
 from tensorflow_serving.apis import predict_pb2, prediction_service_pb2
-from utility import non_max_suppression, detections_boxes, \
-    convert_to_original_size
 
 import utils as utils
 
