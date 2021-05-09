@@ -23,5 +23,6 @@ docker run -t --rm -p 8500:8500 \
     -e MODEL_NAME=yolo \
     tensorflow/serving
     
-python grpcrequest2yolo.py
+cd yolo-inferenc   
+python grpc_request.py
 ```
